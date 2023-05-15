@@ -20,6 +20,7 @@ title = {An efficient variable neighborhood search heuristic for very large scal
 volume = {34},
 journal = {Computers & Operations Research},
 doi = {10.1016/j.cor.2005.10.010},
+keywords = {type: Quantitative, Vehicle routing; Heuristics; Variable neighborhood search; Guided local search; Large scale problems},
 abstract = {In this paper, we present an efficient variable neighborhood search heuristic for the capacitated vehicle routing problem. The objective is to design least cost routes for a fleet of identically capacitated vehicles to service geographically scattered customers with known demands. The variable neighborhood search procedure is used to guide a set of standard improvement heuristics. In addition, a strategy reminiscent of the guided local search metaheuristic is used to help escape local minima. The developed solution method is specifically aimed at solving very large scale real-life vehicle routing problems. To speed up the method and cut down memory usage, new implementation concepts are used. Computational experiments on 32 existing large scale benchmarks, as well as on 20 new very large scale problem instances, demonstrate that the proposed method is fast, competitive and able to find high-quality solutions for problem instances with up to 20,000 customers within reasonable CPU times.}
 }
 @article{MURRAY201586,
@@ -45,7 +46,7 @@ abstract = {Once limited to the military domain, unmanned aerial vehicles are no
   pages={653-697},
   month={December},
   keywords={type: Quantitative, Vehicle Routing Problems; Hybrid Metaheuristics; Evolutionary Algorithms; Local Search; Large Neighb},
-  doi={10.1007/s10732-022-09500-},
+  doi={10.1007/s10732-022-09500-9},
   abstract={ The Capacitated Vehicle Routing Problem (CVRP) has been subject to intense research efforts for more than sixty years. Yet, significant algorithmic improvements are still being made. The most competitive heuristic solution algorithms of today utilize, and often combine, strategies and elements from evolutionary algorithms, local search, and ruin-and-recreate based large neighborhood search. In this paper we propose a new hybrid metaheuristic for the CVRP, where the education phase of the hybrid genetic search (HGS) algorithm proposed by (Vidal Hybrid Genetic Search for the CVRP: Open-Source Implementation and SWAP* Neighborhood 2020) is extended by applying large neighborhood search (LNS). By performing a series of computational experiments, we attempt to answer the following research questions: 1) Is it possible to gain performance by adding LNS as a component in the education phase of HGS? 2) How does the addition of LNS change the relative importance of the local search neighborhoods of HGS? 3) What is the effect of devoting computational efforts to the creation of an elite solution in the initial population of HGS? Through a set of computational experiments we answer these research questions, while at the same time obtaining a good configuration of global parameter settings for the proposed heuristic. Testing the heuristic on benchmark instances from the literature with limited computing time, it outperforms existing algorithms, both in terms of the final gap and the primal integral.},
   url={https://ideas.repec.org/a/spr/joheur/v28y2022i5d10.1007_s10732-022-09500-9.html}
 }
@@ -90,7 +91,7 @@ author = {Nikolaos A. Kyriakakis and Themistoklis Stamadianos and Magdalene Mari
 keywords = {type: qualitative, case study, Drones, Electric vehicle, Unmanned aerial vehicle routing, Ant colony optimization},
 abstract = {This paper introduces the Electric Vehicle Routing Problem with Drones (EVRPD), the first VRP combining electric ground vehicles (EVs) with unmanned aerial vehicles (UAVs), also known as drones, in order to deliver packages to customers. The problem’s objective is to minimize the total energy consumption, focusing on the main non-constant and controllable factor of energy consumption on a delivery vehicle, the payload weight. The problem considers same-sized packages, belonging to different weight classes. EVs serve as motherships, from which drones are deployed to deliver the packages. Drones can carry multiple packages, up to a certain weight limit and their range is depended on their payload weight. For solving the EVRPD, four algorithms of the Ant Colony Optimization framework are implemented, two versions of the Ant Colony System and the Min–Max Ant System. A Variable Neighborhood Descent algorithm is utilized in all variants as a local search procedure. Instances for the EVRPD are created based on the two-echelon VRP literature and are used to test the proposed algorithms. Their computational results are compared and discussed. Practical, real-life scenarios of the EVRPD application are also presented and solved.}
 }
-@article{article,
+@article{articles,
 author = {Laporte, Gilbert},
 year = {2007},
 month = {12},
@@ -98,9 +99,11 @@ pages = {811 - 819},
 title = {What You Should Know About the Vehicle Routing Problem},
 volume = {54},
 journal = {Naval Research Logistics (NRL)},
+keywords = {type: Qualitative, vehicle routing problem; capacity constraints; integer linear programming; heuristics; metaheuristics},
+abstract = {In the Vehicle Routing Problem (VRP), the aim is to design a set of m minimum cost vehicle routes through n customer locations, so that each route starts and ends at a common location and some side constraints are satisfied. Common applications arise in newspaper and food delivery, and in milk collection. This article summarizes the main known results for the classical VRP in which only vehicle capacity constraints are present. The article is structured around three main headings: exact algorithms, classical heuristics, and metaheuristics.},s
 doi = {10.1002/nav.20261}
 }
-@article{article,
+@article{article2,
 author = {Dell'Amico, Mauro and Montemanni, Roberto and Novellani, Stefano},
 year = {2020},
 month = {06},
@@ -109,7 +112,8 @@ title = {Matheuristic algorithms for the parallel drone scheduling traveling sal
 volume = {289},
 journal = {Annals of Operations Research},
 keywords = {type: qualitative,  Traveling salesman problem, Drone-assisted deliveries, Mixed integer linear programming, Heuristic algorithms, Matheuristics},
-doi = {10.1007/s10479-020-03562-3}
+doi = {10.1007/s10479-020-03562-3},
+abstract = {In a near future drones are likely to become a viable way of distributing parcels in a urban environment. In this paper we consider the parallel drone scheduling traveling salesman problem, where a set of customers requiring a delivery is split between a truck and a fleet of drones, with the aim of minimizing the total time required to service all the customers. We present a set of matheuristic methods for the problem. The new approaches are validated via an experimental campaign on two sets of benchmarks available in the literature. It is shown that the approaches we propose perform very well on small/medium size instances. Solving a mixed integer linear programming model to optimality leads to the first optimality proof for all the instances with 20 customers considered, while the heuristics are shown to be fast and effective on the same dataset. When considering larger instances with 48 to 229 customers, the results are competitive with state-of-the-art methods and lead to 28 new best known solutions out of the 90 instances considered}
 }
 @article{GULCZYNSKI2011794,
 title = {The multi-depot split delivery vehicle routing problem: An integer programming-based heuristic, new test problems, and computational results},

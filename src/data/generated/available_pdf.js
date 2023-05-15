@@ -1,1 +1,1 @@
-define({availablePdf: ["1-s2.0-S0305054805003394-main","1-s2.0-S0360835211001379-main","1-s2.0-S0957417421015736-main","1-s2.0-S0968090X15000844-main","1-s2.0-S2772390922000142-main","algorithms-16-00040-v2","drones-03-00066-v2","Naval Research Logistics - 2007 - Laporte - What you should know about the vehicle routing problem","s10479-020-03562-3","s10732-022-09500-9"]});
+const availablePdf = [];
