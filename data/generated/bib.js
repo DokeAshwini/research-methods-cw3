@@ -1,4 +1,4 @@
-﻿define({ entries : {
+﻿const generatedBibEntries = {
     "GULCZYNSKI2011794": {
         "abstract": "The multi-depot split delivery vehicle routing problem combines the split delivery vehicle routing problem and the multiple depot vehicle routing problem. We define this new problem and develop an integer programming-based heuristic for it. We apply our heuristic to 30 instances to determine the reduction in distance traveled that can be achieved by allowing split deliveries among vehicles based at the same depot and vehicles based at different depots. We generate new test instances with high-quality, visually estimated solutions and report results on these instances.",
         "author": "Damon Gulczynski and Bruce Golden and Edward Wasil",
@@ -59,7 +59,7 @@
     "RePEc:spr:joheur:v:28:y:2022:i:5:d:10.1007_s10732-022-09500-9": {
         "abstract": " The Capacitated Vehicle Routing Problem (CVRP) has been subject to intense research efforts for more than sixty years. Yet, significant algorithmic improvements are still being made. The most competitive heuristic solution algorithms of today utilize, and often combine, strategies and elements from evolutionary algorithms, local search, and ruin-and-recreate based large neighborhood search. In this paper we propose a new hybrid metaheuristic for the CVRP, where the education phase of the hybrid genetic search (HGS) algorithm proposed by (Vidal Hybrid Genetic Search for the CVRP: Open-Source Implementation and SWAP* Neighborhood 2020) is extended by applying large neighborhood search (LNS). By performing a series of computational experiments, we attempt to answer the following research questions: 1) Is it possible to gain performance by adding LNS as a component in the education phase of HGS? 2) How does the addition of LNS change the relative importance of the local search neighborhoods of HGS? 3) What is the effect of devoting computational efforts to the creation of an elite solution in the initial population of HGS? Through a set of computational experiments we answer these research questions, while at the same time obtaining a good configuration of global parameter settings for the proposed heuristic. Testing the heuristic on benchmark instances from the literature with limited computing time, it outperforms existing algorithms, both in terms of the final gap and the primal integral.",
         "author": "Martin Simensen and Geir Hasle and Magnus St\u00e5lhane",
-        "doi": "10.1007/s10732-022-09500-",
+        "doi": "10.1007/s10732-022-09500-9",
         "journal": "Journal of Heuristics",
         "keywords": "type: Quantitative, Vehicle Routing Problems; Hybrid Metaheuristics; Evolutionary Algorithms; Local Search; Large Neighb",
         "month": "December",
@@ -87,6 +87,20 @@
         "year": "2023"
     },
     "article": {
+        "abstract": "In this paper, we present an efficient variable neighborhood search heuristic for the capacitated vehicle routing problem. The objective is to design least cost routes for a fleet of identically capacitated vehicles to service geographically scattered customers with known demands. The variable neighborhood search procedure is used to guide a set of standard improvement heuristics. In addition, a strategy reminiscent of the guided local search metaheuristic is used to help escape local minima. The developed solution method is specifically aimed at solving very large scale real-life vehicle routing problems. To speed up the method and cut down memory usage, new implementation concepts are used. Computational experiments on 32 existing large scale benchmarks, as well as on 20 new very large scale problem instances, demonstrate that the proposed method is fast, competitive and able to find high-quality solutions for problem instances with up to 20,000 customers within reasonable CPU times.",
+        "author": "Kyt\u00f6joki, Jari and Nuortio, Teemu and Br\u00e4ysy, Olli and Gendreau, Michel",
+        "doi": "10.1016/j.cor.2005.10.010",
+        "journal": "Computers & Operations Research",
+        "keywords": "type: Quantitative, Vehicle routing; Heuristics; Variable neighborhood search; Guided local search; Large scale problems",
+        "month": "09",
+        "pages": "2743-2757",
+        "title": "An efficient variable neighborhood search heuristic for very large scale vehicle routing problems",
+        "type": "article",
+        "volume": "34",
+        "year": "2007"
+    },
+    "article2": {
+        "abstract": "In a near future drones are likely to become a viable way of distributing parcels in a urban environment. In this paper we consider the parallel drone scheduling traveling salesman problem, where a set of customers requiring a delivery is split between a truck and a fleet of drones, with the aim of minimizing the total time required to service all the customers. We present a set of matheuristic methods for the problem. The new approaches are validated via an experimental campaign on two sets of benchmarks available in the literature. It is shown that the approaches we propose perform very well on small/medium size instances. Solving a mixed integer linear programming model to optimality leads to the first optimality proof for all the instances with 20 customers considered, while the heuristics are shown to be fast and effective on the same dataset. When considering larger instances with 48 to 229 customers, the results are competitive with state-of-the-art methods and lead to 28 new best known solutions out of the 90 instances considered",
         "author": "Dell'Amico, Mauro and Montemanni, Roberto and Novellani, Stefano",
         "doi": "10.1007/s10479-020-03562-3",
         "journal": "Annals of Operations Research",
@@ -97,6 +111,19 @@
         "type": "article",
         "volume": "289",
         "year": "2020"
+    },
+    "articles": {
+        "abstract": "In the Vehicle Routing Problem (VRP), the aim is to design a set of m minimum cost vehicle routes through n customer locations, so that each route starts and ends at a common location and some side constraints are satisfied. Common applications arise in newspaper and food delivery, and in milk collection. This article summarizes the main known results for the classical VRP in which only vehicle capacity constraints are present. The article is structured around three main headings: exact algorithms, classical heuristics, and metaheuristics.},s",
+        "author": "Laporte, Gilbert",
+        "doi": "10.1002/nav.20261",
+        "journal": "Naval Research Logistics (NRL)",
+        "keywords": "type: Qualitative, vehicle routing problem; capacity constraints; integer linear programming; heuristics; metaheuristics",
+        "month": "12",
+        "pages": "811 - 819",
+        "title": "What You Should Know About the Vehicle Routing Problem",
+        "type": "article",
+        "volume": "54",
+        "year": "2007"
     },
     "drones3030066": {
         "abstract": "The use of Unmanned Aerial Vehicles (UAVs) is rapidly growing in popularity. Initially introduced for military purposes, over the past few years, UAVs and related technologies have successfully transitioned to a whole new range of civilian applications such as delivery, logistics, surveillance, entertainment, and so forth. They have opened new possibilities such as allowing operation in otherwise difficult or hazardous areas, for instance. For all applications, one foremost concern is the selection of the paths and trajectories of UAVs, and at the same time, UAVs control comes with many challenges, as they have limited energy, limited load capacity and are vulnerable to difficult weather conditions. Generally, efficiently operating a drone can be mathematically formalized as a path optimization problem under some constraints. This shares some commonalities with similar problems that have been extensively studied in the context of urban vehicles and it is only natural that the recent literature has extended the latter to fit aerial vehicle constraints. The knowledge of such problems, their formulation, the resolution methods proposed\u2014through the variants induced specifically by UAVs features\u2014are of interest for practitioners for any UAV application. Hence, in this study, we propose a review of existing literature devoted to such UAV path optimization problems, focusing specifically on the sub-class of problems that consider the mobility on a macroscopic scale. These are related to the two existing general classic ones\u2014the Traveling Salesman Problem and the Vehicle Routing Problem. We analyze the recent literature that adapted the problems to the UAV context, provide an extensive classification and taxonomy of their problems and their formulation and also give a synthetic overview of the resolution techniques, performance metrics and obtained numerical results.",
@@ -113,4 +140,4 @@
         "volume": "3",
         "year": "2019"
     }
-}});
+};
